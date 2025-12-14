@@ -11,7 +11,7 @@ pipeline {
 				 }}
 			   stage("Checkout for SCM"){
 			           steps {
-					   git branch: 'main' , credentials : 'github' , url: 'https://github.com/NagamYella/Newproject.git'
+					   git branch: 'main' , credentialsId : 'github' , url: 'https://github.com/NagamYella/Newproject.git'
 					  }}
 		        stage("Build Application"){
 				      steps{
